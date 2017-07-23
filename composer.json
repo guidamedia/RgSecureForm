@@ -1,0 +1,12 @@
+{
+  "name": "RobGuida/SecureForm",
+  "description": "Simple token system to protect against CSRF",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Robert Guida",
+      "email": "robguida4@gmail.com"
+    }
+  ]
+}
