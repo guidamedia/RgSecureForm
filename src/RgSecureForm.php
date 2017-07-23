@@ -25,11 +25,7 @@ class RgSecureForm
         $cache_val['left'] = $form->getRandomString();
         $cache_val['center'] = $form->getRandomString();
         /* when a $life span is provided, use it, or store it until it is deleted */
-        if (0 < $life) {
-            $result = apc_add($cache_key, $cache_val, $life);
-        } else {
-            $result = apc_add($cache_key, $cache_val);
-        }
+        $result = apc_add($cache_key, $cache_val, $life);
         if (!$result) {
             throw new Exception('apc_add() failed to save the data');
         }
