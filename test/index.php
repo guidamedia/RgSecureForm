@@ -2,6 +2,9 @@
 
 require_once "../bootstrap.php";
 
+$_SESSION['test'] ='test';
+echo(__FILE__ . ' ' . __LINE__ . ' $_SESSION:<pre>' . print_r($_SESSION, true) . '</pre>');
+
 use RobGuida\RgSecureForm\RgSecureForm;
 
 $token = '';
